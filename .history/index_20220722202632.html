@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom system -->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/05b8218d7f.js" crossorigin="anonymous"></script>
+    <script src="navigation.js" defer></script>
+    
+    <title>RJ Electronics</title>
+</head>
+<body>
+    <header class="primary-header flex">
+            <a href="#">            
+                <img class="logo" width="50px" height="50px"src="/img/logo.svg" alt="">
+            </a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+            <nav >
+                <ul class="primary-navigation flex" data-visible="false">
+                    <li><a href="#" class="uppercase text-dark ff-serif">Acerca de</a></li>
+                    <li><a href="#" class="uppercase text-dark ff-serif">Servicios</a></li>
+                    <li><a href="#" class="uppercase text-dark ff-serif">Proyectos</a></li>
+                    <li><a href="#" class="uppercase text-dark ff-serif">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="grid-container grid-container--home">
+        <section class="hero">
+            <div  >
+                <h1 class="ff-sans fs-700">Ofrecemos Soluciones Electrónicas Integrales para tu hogar</h1>
+                <a href="#" class="button"><span>Me interesa</span></a>
+                <div class="dot-indicators flex" role="tablist" aria-label="services list">
+                    <button aria-selected="true" aria-controls="lampara-tab" data-image="lampara-image" role="tab" tabindex="0"><span class="sr-only">Lampara</span></button>
+                    <button aria-selected="false" aria-controls="interruptor-tab" data-image="interruptor-image" role="tab" tabindex="-1"><span class="sr-only">Interruptor</span></button>
+                    <button aria-selected="false" aria-controls="tomacorriente-tab" data-image="tomacorriente-image" role="tab" tabindex="-1"><span class="sr-only">Tomacorriente</span></button>
+                    <button aria-selected="false" aria-controls="resistencia-tab" data-image="resistencia-image" role="tab" tabindex="-1"><span class="sr-only">Resistencia</span></button>
+                  </div> 
+                <div>
+                    <img src="/img/lampara.png" alt="">
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section>
+            <h2>Servicios</h2>
+            <div>
+            <article>
+                <i class="fa-solid fa-bolt"></i>
+                <p>Instrumentación & automatización</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Tableros eléctricos</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-plug"></i>
+                <p>Domótica</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-charging-station"></i>
+                <p>Planos eléctricos</p>
+            </article>
+            </div>
+            <button>
+                <span>Más detalles</span>            
+            </button>
+        </section>
+        <section>
+            <h2>Proyectos</h2>
+            <article>
+                <h2>Instalación de tablero eléctrico</h2>
+                <img src="/img/trabajos-tablero.JPG" alt="">
+                <p>Diseñamos y construimos tableros electrónicos a tu medida.</p>
+            </article>
+            <article>
+                <h2>Iluminación de galpón comercial</h2>
+                <img src="/img/trabajos-iluminacion-galpon.JPG" alt="">
+                <p>Instalamos luminaria e iluminación en galpones industriales.</p>
+            </article>
+            <article>
+                <h2>Iluminación de oficinas</h2>
+                <img src="/img/iluminacion-oficinas.jpeg" alt="">
+                <p>Iluminamos espacios corporativos y residenciales.</p>
+            </article>
+            <article>
+                <h2>Mantenimiento electrónico</h2>
+                <img src="/img/mantenimiento electrico.jpg" alt="">
+                <p>Realizamos mantenimiento y reparación de equipos industriales, comerciales y residenciales.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Nuestros números</h2>
+            <div class="container"></div>
+            <div>
+                <span>+5</span>
+                <p>Años de experiencia</p>
+            </div>
+            <div>
+                <span>+40</span>
+                <p>Proyectos terminados</p>
+            </div>
+            <div>
+                <span>+20</span>
+                <p>Clientes felices</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <a href="#">            
+                <img width="50px" height="50px"src="/img/logo.svg" alt="">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <p>Made with love by Jeralidea</p>
+        </div>
+   
+    </footer>
+    
+</body>
+</html>
