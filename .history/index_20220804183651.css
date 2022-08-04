@@ -460,7 +460,7 @@ i:hover{
 }
 
 .projects >h2{
-    margin: 1em 0em;
+    margin-top: 1em;
 }
 
 /* -------------------------*/
@@ -473,12 +473,12 @@ i:hover{
 }
 
 .statics div>h2{
-    margin: 1em 0em;
+    margin-top: 1em;
 }
 
 .static{
     padding: 2em 0em;
-    margin: 0em 0em;
+    margin: 4em 1em;
 }
 
 .character {

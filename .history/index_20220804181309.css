@@ -113,7 +113,8 @@ textarea {
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
-
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
@@ -129,9 +130,6 @@ textarea {
     align-items: center;
 }
 
-.j-content{
-    justify-content: center;
-}
 
 .container {
     width: 80%;
@@ -459,10 +457,6 @@ i:hover{
 	border-bottom: 1px solid #fff;
 }
 
-.projects >h2{
-    margin: 1em 0em;
-}
-
 /* -------------------------*/
 /* -------STATICS --------- */
 /* -------------------------*/
@@ -472,13 +466,13 @@ i:hover{
 
 }
 
-.statics div>h2{
-    margin: 1em 0em;
+.statics >h2{
+    margin-top: 2em;
 }
 
 .static{
-    padding: 2em 0em;
-    margin: 0em 0em;
+    padding: 2em 4em;
+    margin: 4em 2em;
 }
 
 .character {

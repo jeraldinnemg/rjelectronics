@@ -319,9 +319,7 @@ header >div{
 }
 
 @media (min-width: 35em){
-    .primary-navigation, .contact{
-        padding-inline: clamp(3rem, 7vw, 7rem);
-    }
+
 
 }
 

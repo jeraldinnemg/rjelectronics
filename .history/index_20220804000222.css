@@ -113,7 +113,6 @@ textarea {
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
-
 }
 
 .grid {
@@ -129,9 +128,6 @@ textarea {
     align-items: center;
 }
 
-.j-content{
-    justify-content: center;
-}
 
 .container {
     width: 80%;
@@ -312,10 +308,6 @@ header >div{
         outline:5px solid white;
         outline-offset: 5px;
     }
-
-    .contact >div{
-        text-align: center;
-    }
 }
 
 @media (min-width: 35em){
@@ -418,6 +410,7 @@ i:hover{
 /* -------PROJECTS -------- */
 /* -------------------------*/
 
+
 .projects-container >article{
     position: relative;
     min-height: 300px;
@@ -425,7 +418,10 @@ i:hover{
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 1em;
-    margin-bottom: 2em;
+}
+
+.projects >div >div {
+    gap: 2em;
 }
 
 .projects .project .project-overlay{
@@ -459,26 +455,23 @@ i:hover{
 	border-bottom: 1px solid #fff;
 }
 
-.projects >h2{
-    margin: 1em 0em;
-}
-
 /* -------------------------*/
 /* -------STATICS --------- */
 /* -------------------------*/
 
 .statics {
     background-color: hsl( var(--clr-secondary));
-
+    flex-direction: column;
 }
 
-.statics div>h2{
-    margin: 1em 0em;
+.statics >h2{
+    margin-top: 2em;
 }
 
 .static{
-    padding: 2em 0em;
-    margin: 0em 0em;
+    padding: 2em 4em;
+    margin: 2em 0em;
+    flex-direction: column;
 }
 
 .character {
@@ -596,6 +589,8 @@ footer a {
         repeat (2, minmax((0, 30rem)) minmax(1rem, 1fr));
     }
 
+
+
     .container {
         flex-direction: row;
         gap: 2em;
@@ -609,9 +604,7 @@ footer a {
         max-width: 20%;
     }
 
-    .projects-container article:last-child {
-        margin-top: 2em;
-     }
+
 
 
 

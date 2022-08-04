@@ -459,10 +459,6 @@ i:hover{
 	border-bottom: 1px solid #fff;
 }
 
-.projects >h2{
-    margin: 1em 0em;
-}
-
 /* -------------------------*/
 /* -------STATICS --------- */
 /* -------------------------*/
@@ -472,13 +468,13 @@ i:hover{
 
 }
 
-.statics div>h2{
-    margin: 1em 0em;
+.statics >h2{
+    margin-top: 2em;
 }
 
 .static{
     padding: 2em 0em;
-    margin: 0em 0em;
+    margin: 4em 1em;
 }
 
 .character {

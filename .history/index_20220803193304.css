@@ -10,11 +10,10 @@
    --clr-white: 0 0% 100%;
    
 /*font-sizes*/
---fs-1100: 9.375rem; /*150x*/
---fs-1000: 6.25rem; /*100px*/
---fs-900: 4.5rem; /*72px*/
---fs-800: 3.5rem; /*56px*/
---fs-700: 3rem; /*48px*/
+--fs-1000: 9.375rem; /*150x*/
+--fs-900: 6.25rem; /*100px*/
+--fs-800: 4.5rem; /*72px*/
+--fs-700: 3.5rem; /*56px*/
 --fs-600: 2rem; /*32px*/
 --fs-500: 1.75rem; /*28px*/
 --fs-400: 1.125rem; /*18px*/
@@ -113,7 +112,6 @@ textarea {
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
-
 }
 
 .grid {
@@ -129,9 +127,6 @@ textarea {
     align-items: center;
 }
 
-.j-content{
-    justify-content: center;
-}
 
 .container {
     width: 80%;
@@ -292,7 +287,7 @@ header >div{
         display: block;
         position: absolute;
         z-index:2000;
-        right: 3rem;
+        right: 2rem;
         top: 2rem;
         background: transparent;
         background-image: url(img/icon-hamburger.svg);
@@ -311,10 +306,6 @@ header >div{
     .mobile-nav-toggle:focus-visible{
         outline:5px solid white;
         outline-offset: 5px;
-    }
-
-    .contact >div{
-        text-align: center;
     }
 }
 
@@ -398,11 +389,11 @@ header >div{
 /* --------- */
 .card{
     background-color: hsl( var(--clr-main));
-    flex-direction: column;
-    align-items: center;
     padding: 2em 4em;
     margin: 2em 0em;
     border-radius: 1em;
+    flex-direction: column;
+    max-width:100%
 }
 
 i:hover{
@@ -418,14 +409,21 @@ i:hover{
 /* -------PROJECTS -------- */
 /* -------------------------*/
 
+.projects-container{
+    grid-template-columns: repeat(1, 1fr); 
+    margin-top: 2em;
+    gap:2rem;
+}
+
 .projects-container >article{
     position: relative;
-    min-height: 300px;
+
+    min-width: 400px;
+    min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 1em;
-    margin-bottom: 2em;
 }
 
 .projects .project .project-overlay{
@@ -459,26 +457,23 @@ i:hover{
 	border-bottom: 1px solid #fff;
 }
 
-.projects >h2{
-    margin: 1em 0em;
-}
-
 /* -------------------------*/
 /* -------STATICS --------- */
 /* -------------------------*/
 
 .statics {
     background-color: hsl( var(--clr-secondary));
-
+    flex-direction: column;
 }
 
-.statics div>h2{
-    margin: 1em 0em;
+.statics >h2{
+    margin-top: 2em;
 }
 
 .static{
-    padding: 2em 0em;
-    margin: 0em 0em;
+    padding: 2em 4em;
+    margin: 2em 0em;
+    flex-direction: column;
 }
 
 .character {
@@ -578,22 +573,19 @@ footer a {
     padding-inline: 1rem;
 }
 
-@media (min-width: 35em){
 
-}
 
 @media (min-width: 45em){
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(1rem, 1fr) 
         repeat (2, minmax((0, 30rem)) minmax(1rem, 1fr));
+    }
+
+    .grid-container--home {
+        padding-bottom: max(6rem, 20vh);
+        align-items: left;
     }
 
     .container {
@@ -605,16 +597,16 @@ footer a {
         max-width: 40%;
     }
 
-    .card {
-        max-width: 20%;
+    .card{
+        max-width: 15em;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .projects-container article:last-child {
-        margin-top: 2em;
-     }
-
-
-
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5em;
+    } 
     footer{
         flex-direction: row;
         justify-content: space-between;
