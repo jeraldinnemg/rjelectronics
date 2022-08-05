@@ -116,10 +116,6 @@ textarea {
 
 }
 
-.grid {
-    display: grid;
-    gap: var(--gap, 1rem);
-}
 
 .a-self{
     align-self: center;

@@ -476,10 +476,7 @@ i:hover{
     margin: 1em 0em;
 }
 
-.static{
-    padding: 3em 0em;
 
-}
 
 .character {
     color: hsl( var(--clr-dark));
@@ -513,10 +510,6 @@ footer{
 footer a {
     text-decoration: none;
     list-style: none;
-}
-
-footer div:last-child{
-    margin-bottom: 0.5em;
 }
 
 /* -------------------------*/

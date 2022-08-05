@@ -515,8 +515,8 @@ footer a {
     list-style: none;
 }
 
-footer div:last-child{
-    margin-bottom: 0.5em;
+footer >div:last-child{
+    margin-top: 1em;
 }
 
 /* -------------------------*/
