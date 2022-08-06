@@ -152,10 +152,6 @@ header >div{
     display: flex;
 }
 
-.logo{
-    margin: 1.5rem 0;
-}
-
 .nav {
     width: 100%;
 }
@@ -186,8 +182,8 @@ header >div{
 .bg-white { background-color: hsl(var(--clr-white));}
 
 .text-dark { color: hsl(var(--clr-dark));}
-.text-dark { color: hsl(var(--clr-dark));}
-.text-dark { color: hsl(var(--clr-dark));}
+.text-white { color: hsl(var(--clr-white));}
+.text-secundary { color: hsl(var(--clr-secondary));}
 
 /*Typography */
 
@@ -231,22 +227,20 @@ header >div{
     display: block;
 }
 
-
-
 /* ----------------- */
 /* ---COMPONENT----- */
 /* ----------------- */
 
 /* Primary header */
 
-.logo{
-    margin: 1.5rem clamp(1.5rem, 5vw, 4rem);
-}
-
-.primary-header{
+.primary-header, footer{
     align-items:center;
     justify-content: space-between;
     background-color: hsl(var(--clr-main));
+}
+
+.logo{
+    margin: 1.5rem clamp(1.5rem, 5vw, 4rem);
 }
 
 
@@ -260,14 +254,14 @@ header >div{
 
 .primary-navigation a{
     text-decoration: none;
-    margin-right: 1em;
+
 }
 
 .mobile-nav-toggle{
     display: none;
 }
 
-@media(max-width:35em){
+@media(max-width:45em){
     .primary-navigation{
         --underline-gap: 0.5rem;
         position: fixed;
@@ -312,25 +306,7 @@ header >div{
         outline:5px solid white;
         outline-offset: 5px;
     }
-
-    .contact >div{
-        text-align: center;
-    }
 }
-
-@media (min-width: 35em){
-    .primary-navigation, .contact{
-        padding-inline: clamp(3rem, 7vw, 7rem);
-    }
-
-}
-
-@media(min-width: 45em){
-    .primary-navigation{
-        margin-block:2rem;
-    }
-}
-
 
 /* ---------- */
 /* --BUTTON-- */
@@ -396,6 +372,7 @@ header >div{
 /* ---------- */
 /* Card     */
 /* --------- */
+
 .card{
     background-color: hsl( var(--clr-main));
     flex-direction: column;
@@ -405,7 +382,7 @@ header >div{
     border-radius: 1em;
 }
 
-i:hover{
+i:hover, a:hover{
     color: hsl( var(--clr-secondary));
 }
 
@@ -582,15 +559,12 @@ footer div:last-child{
     padding-inline: 1rem;
 }
 
-@media (min-width: 35em){
-
-}
-
 @media (min-width: 45em){
+
     .row {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .grid-container {
@@ -617,14 +591,15 @@ footer div:last-child{
         margin-top: 2em;
      }
 
-
+     .overlay-text {
+         font-size: var(--fs-600);
+     }
 
     footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    
 }
 
 

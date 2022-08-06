@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom system -->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/05b8218d7f.js" crossorigin="anonymous"></script>
+
+
+    <script src="navigation.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <script src="counter.js" defer></script>
+    
+    <title>RJ Electronics</title>
+</head>
+<body>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=541150219541&text=Hola%20RJelectronics%20tengo%20una%20consulta" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a> -->
+
+    <header class="primary-header">
+        <div class="container row">
+            <a href="#">            
+                <img class="logo" width="50px" height="50px"src="img/logo.svg" alt="logo">
+            </a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul class="primary-navigation flex" data-visible="false">
+                    <li><a href="#inicio" class="uppercase text-dark ff-serif">Inicio</a></li>
+                    <li><a href="#services" class="uppercase text-dark ff-serif">Servicios</a></li>
+                    <li><a href="#projects" class="uppercase text-dark ff-serif">Proyectos</a></li>
+                    <li><a href="#contact" class="uppercase text-dark ff-serif">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio" >
+        <div class="container row">
+            <!-- CTA-1 -->
+            <article class="a-self" id="lampara-tab" role="tabpanel" tabindex="0">
+                <h1 class="ff-serif fs-700">Ofrecemos Soluciones Electrónicas Integrales</h1>
+                <p class="ff-sans fs-400">Diseñamos y construimos una solución para cualquier necesidad, falla o problema electrónico industrial, comercial o residencial.</p>
+                <a href="https://api.whatsapp.com/send?phone=541150219541&text=Hola%20RJelectronics%20tengo%20una%20consulta" class="button" target="_blank"><span>Me interesa</span></a>
+            </article>
+            <!-- CTA-2 --> 
+            <article hidden class="a-self" id="destornillador-tab" role="tabpanel" tabindex="0">
+                <h2 class="ff-serif fs-700">Creamos espacios luminosos a tu medida</h2>
+                <p class="ff-sans fs-400">Nos encargamos de calcular los lumens necesarios para que obtengas un espacio con luz de calidad.</p>
+                <a href="https://api.whatsapp.com/send?phone=541150219541&text=Hola%20RJelectronics%20tengo%20una%20consulta" class="button" target="_blank"><span>Ver más</span></a>
+            </article> 
+            <!-- CTA-3 --> 
+            <article hidden class="a-self" id="interruptor-tab" role="tabpanel" tabindex="0">
+                <h2 class="ff-serif fs-700">Creamos ambientes inteligentes</h2>
+                <p class="ff-sans fs-400">Nos encargamos de automatizar espacios y lugares de manera fácil y rápida.</p>
+                <a href="https://api.whatsapp.com/send?phone=541150219541&text=Hola%20RJelectronics%20tengo%20una%20consulta" class="button" target="_blank"><span>Me interesa</span></a>
+            </article>
+            <picture class= "hero__image" id="lampara-image">
+                <img src="img/lampara.png" alt="lampara" >
+            </picture>
+            <picture class= "hero__image" hidden id="destornillador-image">
+                <img src="img/destornillador.png" alt="destornillador">
+            </picture>
+            <picture class= "hero__image" hidden id="interruptor-image">
+                <img src="img/interruptor.png" alt="interruptor">
+            </picture> 
+        </div> 
+        <!-- Dots -->
+       <div class="dot-indicators flex" role="tablist" aria-label="services list">
+            <button aria-selected="true" aria-controls="lampara-tab" data-image="lampara-image" role="tab" tabindex="0"><span class="sr-only">Lampara</span></button>
+            <button aria-selected="false" aria-controls="destornillador-tab" data-image="destornillador-image" role="tab" tabindex="-1"><span class="sr-only">destornillador</span></button>
+            <button aria-selected="false" aria-controls="interruptor-tab" data-image="interruptor-image" role="tab" tabindex="-1"><span class="sr-only">Interruptor</span></button>
+        </div>            
+    </section> 
+    <main class="container"> 
+        <section class="services" id="services">
+            <h2 class="ff-serif fs-600 uppercase">Servicios</h2>
+            <div class="container row">
+                <article class="card flex">
+                    <i class="fa-solid fa-bolt fs-700"></i>
+                    <div class="card-body">
+                        <h2 class="card-title fs-400">Instrumentación</h2>
+                    </div>
+                </article>
+                <article class="card flex">
+                    <i class="fa-solid fa-plug fs-700 "></i>
+                    <div class="card-body">
+                        <h2 class="card-title fs-400">Tableros</h2>
+                    </div>
+                </article>
+                <article class="card flex">
+                    <i class="fa-solid fa-lightbulb fs-700"></i>
+                    <div class="card-body">
+                        <h2 class="card-title fs-400">Domótica</h2>
+    
+                    </div>
+                </article>
+                <article class="card flex">
+                    <i class="fa-solid fa-building  fs-700"></i>
+                    <div class="card-body">
+                        <h2 class="card-title fs-400">Planos</h2>
+
+                    </div>
+                </article>
+        </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="ff-serif fs-600 uppercase">Algunos Proyectos</h2>
+            <div class="container row">
+                <div class="col  projects-container">
+                    <article class="project" style="background-image: url('img/servicio-electricidad.JPG')">
+                        <div class="project-overlay">
+                            <h2 class="overlay-text fs-400 uppercase" >Tablero eléctrico</h2>
+                        </div>
+                    </article>
+                    <article class="project" style="background-image: url('img/trabajos-iluminacion-galpon.JPG')">
+                        <div class="project-overlay">
+                            <h2 class="overlay-text fs-400 uppercase">Iluminación industrial</h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="col projects-container">
+                    <article class="project" style="background-image: url('img/iluminacion-oficinas.jpeg') ">
+                        <div class="project-overlay">
+                            <h2 class="overlay-text fs-400 uppercase">Iluminación de oficina</h2>
+                        </div>
+                    </article>
+                    <article class="project" style="background-image: url('img/servicios-domotica.jpg') ">
+                        <div class="project-overlay">
+                            <h2 class="overlay-text fs-400 uppercase">Domótica en casa</h2>
+                        </div>
+                    </article>
+            </div>
+        </section>
+    </main> 
+
+   <section class="statics">
+    <div class="container">
+        <h2 class="ff-serif fs-600 uppercase" >Nuestros números</h2>
+        <div class="container row" >
+            <div class="container static">
+                <span class="character fs-600">+</span><span class="counter character fs-600 fw-600 hide" data-target="8"></span>
+                <p class="fs-400">Años de experiencia</p>
+            </div>
+            <div class="container static">
+                <span class="character fs-600">+</span><span class="counter character fs-600 fw-600 hide" data-target="50"></span>
+                <p class="fs-400">Proyectos terminados</p>
+            </div>
+            <div class="container static">
+                <span class="character fs-600">+</span><span class="counter character fs-600 fw-600 hide" data-target="40"></span>
+                <p class="fs-400">Clientes felices</p>
+            </div>
+        </div>
+    </div>
+    </section> 
+
+    <footer id="contact">
+        <div class="container row">
+        <a href="#">            
+            <img class="logo" width="50px" height="50px"src="img/logo.svg" alt="logo">
+        </a>
+        <div class="container contact">
+            <h3 class="ff-serif fs-400 uppercase">¡Síguenos!</h3>
+            <div class="flex a-item j-content"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" class="text-dark  fs-400 ff-sans fw-200"  target="_blank">@rjelectronics</a></div>
+            <div class="flex a-item j-content"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/" class="text-dark fs-400 ff-sans fw-200"  target="_blank">Soluciones electrónicas</a></div>
+            <div class="flex a-item j-content"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/ingreinaldomora/" class="text-dark fs-400 ff-sans fw-200" target="_blank" >Reinaldo Mora</a></div>
+        </div>
+        <div class="container contact">
+            <h3 class="ff-serif fs-400 uppercase" >Contacto</h3>
+            <div class="flex a-item j-content"><i class="fa-solid fa-envelope"></i><p class="fs-400 ff-sans fw-200">info@rjelectronic.com</p></div>          
+            <div class="flex a-item j-content"><i class="fa-solid fa-phone"></i><p class="fs-400 ff-sans">+54-1150219541</p></div>
+            <div class="flex a-item j-content"><i class="fa-solid fa-location-dot"></i><p class="fs-400 ff-sans">Buenos Aires, CABA.</p></div>
+        </div>
+    </div>
+    </footer>
+
+    <div class="copyright">Made with <i class="fa-solid fa-bolt"></i> © by Jeralidea</div>
+    
+</body>
+</html>
