@@ -564,7 +564,7 @@ footer div:last-child{
     .services{
         flex: column;
     }
-}
+
  
 @media (min-width: 45em){
 
@@ -609,4 +609,4 @@ footer div:last-child{
     }
 }
 
-
+}

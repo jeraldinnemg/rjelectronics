@@ -561,11 +561,52 @@ footer div:last-child{
 
 @media (min-width: 35em){
 
-    .services{
-        flex: column;
+    .primary-header{
+        display: block;
     }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grid-container {
+        text-align: left;
+        column-gap: var(--container-gap, 2rem);
+        grid-template-columns: minmax(1rem, 1fr) 
+        repeat (2, minmax((0, 30rem)) minmax(1rem, 1fr));
+    }
+
+    /* .container {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .hero__image{
+        max-width: 40%;
+    }
+
+    .card {
+        max-width: 20%;
+    }
+
+    .projects-container article:last-child {
+        margin-top: 2em;
+     }
+
+     .overlay-text {
+         font-size: var(--fs-600);
+     }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    } */
 }
- 
+
+
 @media (min-width: 45em){
 
     .row {
